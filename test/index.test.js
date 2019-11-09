@@ -16,6 +16,10 @@ describe('Numbers module', () => {
     const exists = numbers.comboSum([1, 3, 6, 2, 9], 14)
     expect(exists).toBe(false)
   })
+  test('Determine if any combination equals a given sum', () => {
+    const exists = numbers.comboSum([1, 10, 6, 4, 9], 14)
+    expect(exists).toBe(true)
+  })
 
 })
 
